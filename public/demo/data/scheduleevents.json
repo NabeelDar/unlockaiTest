@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "title": "Aenean Lectus",
+      "start": "2022-05-18",
+      "end": "2022-05-22",
+      "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "location": "93529 Sloan Junction",
+      "backgroundColor": "#FFC7E8",
+      "borderColor": "#FFC7E8",
+      "textColor": "#212121",
+      "tag": {
+        "color": "#1877F2",
+        "name": "Facebook"
+      }
+    },
+    {
+      "id": 1,
+      "title": "Maecenas Pulvinar",
+      "start": "2022-05-11",
+      "end": "2022-05-12",
+      "description": "eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus",
+      "location": "260 Calypso Terrace",
+      "backgroundColor": "#FFB6B6",
+      "borderColor": "#FFB6B6",
+      "textColor": "#212121",
+      "tag": {
+        "color": "#E1306C",
+        "name": "Instagram"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Nam Ultrices",
+      "start": "2022-05-25T16:00:00",
+      "end": "2022-05-25T18:00:00",
+      "description": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+      "location": "9295 Almo Avenue",
+      "backgroundColor": "#D2D6FF",
+      "borderColor": "#D2D6FF",
+      "textColor": "#212121",
+      "tag": {
+        "color": "#1DA1F2",
+        "name": "X (Twitter)"
+      }
+    }
+  ]
+}

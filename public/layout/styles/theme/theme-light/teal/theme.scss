@@ -1,0 +1,11 @@
+$primaryColor: #6CA9FB !default;
+$primaryLightColor: #89b5f5 !default;
+$primaryLighterColor: rgba($primaryLightColor, 0.1);
+$primaryDarkColor: #3a8aff !default;
+$primaryDarkerColor: #0f71ff !default;
+$primaryTextColor: #ffffff !default;
+
+@import '../_variables';
+@import '../../theme-base/_components';
+@import '../_extensions';
+@import '../../extensions/_fullcalendar';

@@ -1,0 +1,31 @@
+.rainbow-success {
+  background: linear-gradient(90deg, rgba(40, 152, 255, 0.8), rgba(171, 100, 241, 0.8));
+}
+
+.rainbow-title {
+  background: -webkit-linear-gradient(90deg, rgba(25, 93, 156, 1), rgba(107, 62, 152, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rainbow-title-vip {
+  background: -webkit-linear-gradient(90deg, rgba(40, 152, 255, 0.8), rgba(171, 100, 241, 0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h-40rem {
+  height: 40rem;
+}
+
+.h-50rem {
+  height: 50rem;
+}
+
+.h-55rem {
+  height: 55rem;
+}
+
+.h-60rem {
+  height: 60rem;
+}

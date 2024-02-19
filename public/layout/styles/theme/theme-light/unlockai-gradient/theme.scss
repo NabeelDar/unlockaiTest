@@ -1,0 +1,11 @@
+$primaryLightColor: linear-gradient(90deg, #7fc0fc, #d3aafc);
+$primaryColor: linear-gradient(90deg, #2898FF, #AB64F1);
+$primaryDarkColor: linear-gradient(90deg, #005dbd, #6920b2);
+$primaryDarkerColor: linear-gradient(90deg, #00305d, #280050);
+$primaryTextColor: #293241;
+$primaryLighterColor: linear-gradient(90deg, #a6cefc, #e7d0ff);
+
+@import '../_variables';
+@import '../../theme-base/_components';
+@import '../_extensions';
+@import '../../extensions/_fullcalendar';
