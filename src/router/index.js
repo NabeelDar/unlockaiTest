@@ -574,52 +574,52 @@ const LOGIN_URL = 'https://www.unlockai.xyz/signin';
 const AUTH_API_URL = 'https://vbrm7sq846.execute-api.us-east-1.amazonaws.com/default/VueCookieAuth';
 
 
-router.beforeEach(async (to, from, next) => {
-    if (!to.matched.some(record => record.meta.requiresAuth)) {
-        return next();
-    }
+// router.beforeEach(async (to, from, next) => {
+//     if (!to.matched.some(record => record.meta.requiresAuth)) {
+//         return next();
+//     }
 
-    const idToken = getCookie('idToken');
-    const accessToken = getCookie('accessToken');
+//     const idToken = getCookie('idToken');
+//     const accessToken = getCookie('accessToken');
 
-    if (!idToken || !accessToken) {
-        window.location.href = LOGIN_URL; // Redirect to external URL
-        //next("/plans");
-        return;
-    }
+//     if (!idToken || !accessToken) {
+//         window.location.href = LOGIN_URL; // Redirect to external URL
+//         //next("/plans");
+//         return;
+//     }
 
-    try {
-        const response = await fetch(AUTH_API_URL, {
-            method: 'GET',
-            headers: {
-                'Authorization': `Bearer ${idToken}`,
-                'x-access-token': accessToken,
-            },
-            credentials: 'include'
-        });
+//     try {
+//         const response = await fetch(AUTH_API_URL, {
+//             method: 'GET',
+//             headers: {
+//                 'Authorization': `Bearer ${idToken}`,
+//                 'x-access-token': accessToken,
+//             },
+//             credentials: 'include'
+//         });
 
-        if (!response.ok) {
-            throw new Error('Authentication failed');
-        }
+//         if (!response.ok) {
+//             throw new Error('Authentication failed');
+//         }
 
-        const data = await response.json();
-        if (!data.user_id) {
-            window.location.href = LOGIN_URL; // Redirect to external URL
-            //next("/plans");
-            return;
-        }
+//         const data = await response.json();
+//         if (!data.user_id) {
+//             window.location.href = LOGIN_URL; // Redirect to external URL
+//             //next("/plans");
+//             return;
+//         }
 
-        // Set the user_id in session storage only if it's not already set
-        if (!sessionStorage.getItem('user_id')) {
-            sessionStorage.setItem('user_id', data.user_id);
-        }
-        next();
-    } catch (error) {
-        console.error('Authentication error:', error);
-        window.location.href = LOGIN_URL; // Redirect to external URL
-        //next("/plans");
-    }
-});
+//         // Set the user_id in session storage only if it's not already set
+//         if (!sessionStorage.getItem('user_id')) {
+//             sessionStorage.setItem('user_id', data.user_id);
+//         }
+//         next();
+//     } catch (error) {
+//         console.error('Authentication error:', error);
+//         window.location.href = LOGIN_URL; // Redirect to external URL
+//         //next("/plans");
+//     }
+// });
 
 export default router;
 
